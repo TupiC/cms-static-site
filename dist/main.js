@@ -1,1 +1,1 @@
-(()=>{var t=Object.defineProperty;var r=(o,n)=>{for(var a in n)t(o,a,{get:n[a],enumerable:!0})};var i={};r(i,{init:()=>f});function f(){}window.MainNav=i;})();
+(()=>{var m=Object.defineProperty;var u=(t,e)=>{for(var o in e)m(t,o,{get:e[o],enumerable:!0})};var n={};u(n,{init:()=>c});function c(){let t=document.querySelector(".menu"),e=document.querySelector(".menuItem")}window.MainNav=n;})();

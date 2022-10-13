@@ -20,19 +20,23 @@
 
 <body>
     <header>
-        <a href="/">
-            <h1>Aaron G. Smith | Choreographer</h1>
+        <a href="">
+            <h1>Aaron G. Smith <span>| Choreographer</span>
+            </h1>
         </a>
         <nav>
-            <button id="hamburger"></button>
-            <ul>
-                <li><a href="#workshops">Workshops</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#news">News</a></li>
+            <button id="hamburger">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+            </button>
+            <ul class="menu">
+                <li><a class="menuItem" href="#workshops">Workshops</a></li>
+                <li><a class="menuItem" href="#about">About Me</a></li>
+                <li><a class="menuItem" href="#news">News</a></li>
             </ul>
         </nav>
         <h2>I believe you can dance.</h2>
-        <a href="#" class="button">Book Workshop</a>
+        <a href="#workshops" class="button">Book Workshop</a>
     </header>
 
     <main>
@@ -41,42 +45,84 @@
             <h2>If you never start, you will never know.</h2>
 
             <div class="level">
-                <img src="""./images/level-3.svg" alt='Icon showing dancer stretching her leg up to her nose.'>
-                <pp>3</pp>
-                <h3>As pro as you can get</h3>
-                <p>Lorem ipsum...</p>
-                <a href="#" class="button">Book Workshop</a>
-                <img src="./images/quote.svg" alt='quote sign'>
-                <blockquote>Respect your talent!</blockquote>
+                <div class="imgCircle">
+                    <img src="./images/yoga3.png" alt='Icon showing dancer stretching her leg up to her nose.'
+                        class="yoga">
+                    <div>
+                        <p>3</p>
+                    </div>
+                </div>
+                <div class="levelText">
+                    <h3>As pro as you can get</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat itaque incidunt, nihil,
+                        recusandae
+                        autem aut perferendis reiciendis a neque veniam quibusdam animi ex tempora reprehenderit,
+                        aspernatur
+                        asperiores consequatur consectetur ipsum!
+                    </p>
+                    <a href="#" class="button">Book Workshop</a>
+                </div>
+                <div class="quoteFlex">
+                    <img src="./images/quote.svg" alt='quote sign' class="quote">
+                    <blockquote>Respect your talent!</blockquote>
+                </div>
                 <p class='apply'>Apply for an audition now!</p>
             </div>
 
             <div class="level">
-                <img src="./images/level-3.svg" alt='Icon showing dancer stretching her leg up to her nose.'>
-                <p>3</p>
-                <h3>As pro as you can get</h3>
-                <p>Lorem ipsum...</p>
-                <a href="#" class="button">Book Workshop</a>
-                <img src="./images/quote.svg" alt='quote sign'>
-                <blockquote>Respect your talent!</blockquote>
+                <div class="imgCircle">
+                    <img src="./images/yoga.png" alt='Icon showing dancer stretching her leg up to her nose.'
+                        class="yoga">
+                    <div>
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="levelText">
+                    <h3>As pro as you can get</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat itaque incidunt, nihil,
+                        recusandae
+                        autem aut perferendis reiciendis a neque veniam quibusdam animi ex tempora reprehenderit,
+                        aspernatur
+                        asperiores consequatur consectetur ipsum!
+                    </p>
+                    <a href="#" class="button">Book Workshop</a>
+                </div>
+                <div class="quoteFlex">
+                    <img src="./images/quote.svg" alt='quote sign' class="quote">
+                    <blockquote>Thank yourself for leveling up now!</blockquote>
+                </div>
                 <p class='apply'>Registration now open for everybody!</p>
             </div>
 
             <div class="level">
-                <img src="./images/level-3.svg" alt='Icon showing dancer stretching her leg up to her nose.'>
-                <p>3</p>
-                <h3>As pro as you can get</h3>
-                <p>Lorem ipsum...</p>
-                <a href="#" class="button">Book Workshop</a>
-                <img src="./images/quote.svg" alt='quote sign'>
-                <blockquote>Respect your talent!</blockquote>
+                <div class="imgCircle">
+                    <img src="./images/yoga2.png" alt='Icon showing dancer stretching her leg up to her nose.'
+                        class="yoga">
+                    <div>
+                        <p>1</p>
+                    </div>
+                </div>
+                <div class="levelText">
+                    <h3>As pro as you can get</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat itaque incidunt, nihil,
+                        recusandae
+                        autem aut perferendis reiciendis a neque veniam quibusdam animi ex tempora reprehenderit,
+                        aspernatur
+                        asperiores consequatur consectetur ipsum!
+                    </p>
+                    <a href="#" class="button">Book Workshop</a>
+                </div>
+                <div class="quoteFlex">
+                    <img src="./images/quote.svg" alt='quote sign' class="quote">
+                    <blockquote>Fall in love with dancing!</blockquote>
+                </div>
                 <p class='apply'>Registration now open for everybody!</p>
             </div>
 
         </section>
         <section id="about">
             <div>
-                <img src="" alt="" />
+                <img src="images/aaronImg.jpg" alt="Aaron thinking about something" />
 
                 <p class="super-headline">Why I teach</p>
                 <h2>Hi, I'm Aaron!</h2>
@@ -95,44 +141,46 @@
         <section id="news">
             <p class="super-headline">Making waves since 2004</p>
             <h2>In the News</h2>
-            <article>
-                <h3>Sydney Dance Festival 2022</h3>
-                <img src="dance_festival_performance.jpeg" alt="Aaron performing at the Sydney dance festival 2022">
-                <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                    sed diam nonumy eirmod tempor invidunt ut labore et
-                    dolore magna aliquyam erat, sed diam voluptua. At vero
-                    eos et accusam et justo duo dolores et ea rebum. Stet
-                    clita kasd gubergren, no sea takimata sanctus est.
-                </p>
-                <a href="#" class="button">Read more</a>
-            </article>
+            <div class="articles">
+                <article>
+                    <h3>Sydney Dance Festival 2022</h3>
+                    <img src="images/asiaMenLeft.jpg" alt="Aaron performing at the Sydney dance festival 2022">
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua. At vero
+                        eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est.
+                    </p>
+                    <a href="#" class="button">Read more</a>
+                </article>
 
-            <article>
-                <h3>"Dance Pool" 2023 sold out!</h3>
-                <img src="dance_pool_group_pic.jpeg" alt="Group picture of 'Dance Pool'">
-                <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                    sed diam nonumy eirmod tempor invidunt ut labore et
-                    dolore magna aliquyam erat, sed diam voluptua. At vero
-                    eos et accusam et justo duo dolores et ea rebum. Stet
-                    clita kasd gubergren, no sea takimata sanctus est.
-                </p>
-                <a href="#" class="button">Read more</a>
-            </article>
+                <article>
+                    <h3>"Dance Pool" 2023 sold out!</h3>
+                    <img src="images/peopleRight.jpg" alt="Group picture of 'Dance Pool'">
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua. At vero
+                        eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est.
+                    </p>
+                    <a href="#" class="button">Read more</a>
+                </article>
 
-            <article>
-                <h3>New London Workshop Oct. 2025</h3>
-                <img src="workshop_snapshot.jpeg" alt="Aaron at a workshop">
-                <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                    sed diam nonumy eirmod tempor invidunt ut labore et
-                    dolore magna aliquyam erat, sed diam voluptua. At vero
-                    eos et accusam et justo duo dolores et ea rebum. Stet
-                    clita kasd gubergren, no sea takimata sanctus est.
-                </p>
-                <a href="#" class="button">Read more</a>
-            </article>
+                <article>
+                    <h3>New London Workshop Oct. 2025</h3>
+                    <img src="images/workshop_snapshot.jpg" alt="Aaron at a workshop">
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua. At vero
+                        eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est.
+                    </p>
+                    <a href="#" class="button">Read more</a>
+                </article>
+            </div>
         </section>
     </main>
 
@@ -143,8 +191,9 @@
     </footer>
     <script src='./main.js'></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function (event) {
-            // MainNav.init();
+        document.addEventListener("click", function () {
+
+            MainNav.init();
         });
     </script>
 </body>

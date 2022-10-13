@@ -3,14 +3,58 @@ $max-width: 1920;
 
 
 // BREAKPOINTS
-$mobile: 599;
+$mobile: 600;
 $desktop: $mobile + 1;
 
+//layout
+$leftMargin: 15px;
+$sectionMargin: 60px;
 
 // COLORS
-// $copy: ;
-// $bgcolor: ;
-$bggray: hsl(207, 8%, 22%);
-$primary: red;
+//white
+$whitelight: #f7f7f7;
+$white: #ffffff;
+$darkwhite: #fff7f2;
 
+//grey
+$lightgrey: #d6d6d6;
+$grey: #595959;
+$darkgrey: #363636;
 
+//orange
+$lightorange: #FFAD6E;
+$orange: #F4A76C;
+$darkorange: #d5884d;
+
+//black
+$black: #000000;
+$lighterdark: #1A1A1A;
+
+@mixin button {
+    text-align: left;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 1;
+    background-color: $black 0% 0% no-repeat padding-box;
+    border: 1px solid $darkorange;
+    color: white;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+@mixin superHeadline {
+    font-size: 16px;
+    color: #363636;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@mixin h2 {
+    font-size: 28px;
+    font-weight: 300;
+    color: $darkorange;
+}
