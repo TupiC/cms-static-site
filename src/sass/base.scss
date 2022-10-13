@@ -1,0 +1,39 @@
+@function pem($px, $base: 16) {
+  @return calc($px / $base) + em;
+}
+
+@function rem($px, $base: 16) {
+  @return calc($px / $base) + rem;
+}
+
+@mixin breakpoint($min, $max: 0) {
+  @if $max == 0 {
+    @media ( min-width: rem($min) ) {
+      @content
+    }
+  } @else {
+    @media ( min-width: rem($min) ) and ( max-width: rem($max) ) {
+      @content
+    }
+  }
+}
+
+@mixin hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.hidden {
+  @include hidden;
+}
+
+
+@mixin show {
+  display: block;
+  visibility: visible;
+}
+
+.show {
+  @include show;
+}
+
