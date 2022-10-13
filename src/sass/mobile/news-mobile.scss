@@ -16,6 +16,7 @@
         .articles {
             display: flex;
             flex-direction: row;
+            overflow: scroll;
 
             article {
                 background-color: $whitelight;
