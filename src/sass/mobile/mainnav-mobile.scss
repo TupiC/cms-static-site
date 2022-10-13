@@ -1,0 +1,23 @@
+@include breakpoint(0, $mobile) {
+    #mainnav {
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding: 1rem;
+        width: 100%;
+
+
+        ul {
+            position: fixed;
+            margin-top: 3rem 1rem 1rem 1rem;
+            width: 100vw;
+            height: 100vh;
+            max-width: 15rem;
+            box-shadow: -5px 0 10px 0 rgb(0 0 0 /0.1);
+            top: 0;
+            right: 0;
+            background-color: $white;
+
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@include breakpoint(0, $mobile) {
+    #about {
+        font-family: 'Source Sans Pro';
+        margin-top: $sectionMargin;
+        padding-top: $sectionMargin;
+        height: auto;
+        width: 100vw;
+        padding: 0 $leftMargin $leftMargin+10px $leftMargin;
+        background-color: $darkwhite;
+
+        div {
+            img {
+                height: 458px;
+                width: 100vw;
+                object-fit: cover;
+                object-position: 0 0;
+            }
+        }
+
+        .super-headline {
+            @include superHeadline;
+            margin-top: $leftMargin;
+        }
+
+        h2 {
+            color: $darkorange;
+            font-size: 28px;
+            font-weight: 300;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 16px;
+            color: $darkgrey;
+            line-height: 22px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            @include button;
+            color: $darkgrey
+        }
+    }
+}
