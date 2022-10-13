@@ -1,4 +1,5 @@
 export function init() {
-    const menu = document.querySelector(".menu")
-    const menuItem = document.querySelector(".menuItem")
+    document.querySelector("#hamburger.menu").addEventListener("click", () => {
+        document.querySelector("#hamburger.menuItems")
+    })
 }

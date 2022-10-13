@@ -1,1 +1,1 @@
-(()=>{var m=Object.defineProperty;var u=(t,e)=>{for(var o in e)m(t,o,{get:e[o],enumerable:!0})};var n={};u(n,{init:()=>c});function c(){let t=document.querySelector(".menu"),e=document.querySelector(".menuItem")}window.MainNav=n;})();
+(()=>{var i=Object.defineProperty;var m=(t,n)=>{for(var r in n)i(t,r,{get:n[r],enumerable:!0})};var e={};m(e,{init:()=>o});function o(){document.querySelector("#hamburger.menu").addEventListener("click",()=>{document.querySelector("#hamburger.menuItems")})}window.MainNav=e;})();
