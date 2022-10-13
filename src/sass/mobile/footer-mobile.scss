@@ -1,0 +1,29 @@
+@include breakpoint(0, $mobile) {
+    footer {
+        height: 108px;
+        width: 100vw;
+        font-family: 'Source Sans Pro';
+        color: $white;
+        font-weight: 300;
+        background-color: $darkgrey;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: $leftMargin;
+        margin-top: $sectionMargin/2;
+
+        h4 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        a {
+            color: $darkorange;
+            font-size: 16px;
+            text-decoration: none;
+        }
+    }
+}

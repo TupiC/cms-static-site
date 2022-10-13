@@ -20,6 +20,7 @@
             article {
                 background-color: $whitelight;
                 margin-left: $leftMargin;
+                padding-bottom: $leftMargin;
 
                 h3 {
                     @include h2;
@@ -43,6 +44,7 @@
                 a {
                     @include button;
                     color: $darkgrey;
+                    margin-left: $leftMargin;
                 }
             }
         }

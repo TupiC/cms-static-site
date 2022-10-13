@@ -2,9 +2,10 @@
 
     #hamburger {
         width: 24px;
+        height: 24px;
         position: absolute;
         right: 1rem;
-        top: 1rem;
+        top: 5rem;
         border: none;
         background-color: transparent;
         z-index: 10;
@@ -36,12 +37,13 @@
         &.open {
             .line-1 {
                 transform: rotate(45deg);
-                transform-origin: 0 0;
+                transform-origin: 14px 6px;
             }
 
             .line-2 {
                 transform: rotate(-45deg) translate(11px, 5px);
-                transform-origin: 0px 18px;
+                transform-origin: 4px 8px;
+                width: 24px;
             }
         }
 

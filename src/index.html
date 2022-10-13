@@ -25,7 +25,7 @@
             </h1>
         </a>
         <nav>
-            <button id="hamburger">
+            <button id="hamburger" class="closed">
                 <div class="line-1"></div>
                 <div class="line-2"></div>
             </button>
@@ -35,8 +35,10 @@
                 <li><a class="menuItem" href="#news">News</a></li>
             </ul>
         </nav>
-        <h2>I believe you can dance.</h2>
-        <a href="#workshops" class="button">Book Workshop</a>
+        <div class="headercontainer">
+            <h2>I believe<br>you can dance.</h2>
+            <a href="#workshops" class="button">Book Workshop</a>
+        </div>
     </header>
 
     <main>
@@ -191,10 +193,7 @@
     </footer>
     <script src='./main.js'></script>
     <script>
-        document.addEventListener("click", function () {
-
-            MainNav.init();
-        });
+        MainNav.init();
     </script>
 </body>
 
