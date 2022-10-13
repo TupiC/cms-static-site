@@ -1,0 +1,16 @@
+{
+  "name": "aaron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "esbuild": "^0.15.10",
+    "sass": "^1.55.0"
+  }
+}
