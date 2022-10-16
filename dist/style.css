@@ -217,6 +217,7 @@ body {
 
 html {
   font-family: "Source Sans Pro";
+  scroll-behavior: smooth;
 }
 
 .super-headline {
@@ -247,11 +248,11 @@ p {
 }
 
 @media (min-width: 0rem) and (max-width: 37.5rem) {
-  .hamburgerContainer {
+  .hamburgerStatic {
     width: 50%;
     background-color: #595959;
     position: absolute;
-    height: 100vh;
+    height: 100%;
     top: 0;
     right: 0;
     display: flex;
@@ -261,11 +262,10 @@ p {
     padding-right: 40px;
     z-index: 10;
   }
-  .hamburgerContainer li {
-    font-family: "Source Sans Pro";
+  .hamburgerStatic li {
     margin-top: 2rem;
   }
-  .hamburgerContainer li a {
+  .hamburgerStatic li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
