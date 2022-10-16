@@ -209,8 +209,41 @@ body {
   visibility: visible;
 }
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
+}
+
+html {
+  font-family: "Source Sans Pro";
+}
+
+.super-headline {
+  font-size: 16px;
+  color: #363636;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.button {
+  text-align: left;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 1;
+  background-color: #000000 0% 0% no-repeat padding-box;
+  border: 1px solid #d5884d;
+  color: white;
+  padding: 10px 25px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+p {
+  line-height: 26px;
 }
 
 @media (min-width: 0rem) and (max-width: 37.5rem) {
@@ -290,7 +323,6 @@ body {
     height: 558px;
     object-fit: cover;
     background-position: left -50px top 0;
-    font-family: "Source Sans Pro";
     margin-bottom: 60px;
   }
   header h1 {
@@ -306,14 +338,12 @@ body {
     font-weight: 300;
   }
   header .headercontainer {
-    display: inline-block;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 100vw;
+    display: block;
+    width: 50%;
     height: auto;
-    position: relative;
+    position: absolute;
     top: 45%;
-    margin-left: 50vw;
+    right: 20px;
   }
   header .headercontainer h2 {
     color: #d5884d;
@@ -323,21 +353,6 @@ body {
     letter-spacing: 0px;
     opacity: 1;
     top: 314px;
-  }
-  header .headercontainer .button {
-    text-align: left;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 0.24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    opacity: 1;
-    background-color: #000000 0% 0% no-repeat padding-box;
-    border: 1px solid #d5884d;
-    color: white;
-    padding: 10px 25px;
-    display: inline-block;
-    margin-top: 20px;
   }
 }
 @media (min-width: 0rem) and (max-width: 37.5rem) {
@@ -361,18 +376,9 @@ body {
   }
 }
 @media (min-width: 0rem) and (max-width: 37.5rem) {
-  #workshops {
-    font-family: "Source Sans Pro";
-  }
   #workshops h2,
 #workshops .super-headline {
-    margin-left: 15px;
-  }
-  #workshops .super-headline {
-    font-size: 16px;
-    color: #363636;
-    text-transform: uppercase;
-    font-weight: 600;
+    margin: 0 15px 0 15px;
   }
   #workshops h2 {
     font-size: 28px;
@@ -382,7 +388,7 @@ body {
   #workshops .level {
     display: grid;
     grid-template-columns: auto 115px auto 37px;
-    grid-template-rows: 70px 134px 160px;
+    grid-template-rows: 70px 134px auto;
     background-color: #363636;
     margin-top: 100px;
     padding-left: 15px;
@@ -461,21 +467,6 @@ body {
     margin-top: 15px;
     margin-right: 15px;
   }
-  #workshops .level .levelText .button {
-    text-align: left;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 0.24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    opacity: 1;
-    background-color: #000000 0% 0% no-repeat padding-box;
-    border: 1px solid #d5884d;
-    color: white;
-    padding: 10px 25px;
-    display: inline-block;
-    margin-top: 20px;
-  }
   #workshops .level .quoteFlex {
     display: flex;
     flex-direction: column;
@@ -483,6 +474,8 @@ body {
     grid-row: 3/3;
     align-items: center;
     justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
   }
   #workshops .level .quoteFlex blockquote {
     text-align: center;
@@ -496,7 +489,6 @@ body {
 }
 @media (min-width: 0rem) and (max-width: 37.5rem) {
   #about {
-    font-family: "Source Sans Pro";
     margin-top: 60px;
     padding-top: 60px;
     height: auto;
@@ -511,10 +503,6 @@ body {
     object-position: 0 0;
   }
   #about .super-headline {
-    font-size: 16px;
-    color: #363636;
-    text-transform: uppercase;
-    font-weight: 600;
     margin-top: 15px;
   }
   #about h2 {
@@ -526,37 +514,19 @@ body {
     font-weight: 300;
     font-size: 16px;
     color: #363636;
-    line-height: 22px;
+    text-align: justify;
     margin-bottom: 10px;
+    margin-right: 10px;
   }
   #about a {
-    text-align: left;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 0.24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    opacity: 1;
-    background-color: #000000 0% 0% no-repeat padding-box;
-    border: 1px solid #d5884d;
-    color: white;
-    padding: 10px 25px;
-    display: inline-block;
-    margin-top: 20px;
     color: #363636;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 0rem) and (max-width: 37.5rem) {
   #news {
-    font-family: "Source Sans Pro";
     margin-top: 30px;
     margin-left: 15px;
-  }
-  #news .super-headline {
-    font-size: 16px;
-    color: #363636;
-    text-transform: uppercase;
-    font-weight: 600;
   }
   #news h2 {
     font-size: 28px;
@@ -571,8 +541,8 @@ body {
   }
   #news .articles article {
     background-color: #f7f7f7;
-    margin-left: 15px;
-    padding-bottom: 15px;
+    margin-right: 15px;
+    padding-bottom: 45px;
   }
   #news .articles article h3 {
     font-size: 28px;
@@ -592,20 +562,7 @@ body {
     line-height: 22px;
     margin: 15px;
   }
-  #news .articles article a {
-    text-align: left;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 0.24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    opacity: 1;
-    background-color: #000000 0% 0% no-repeat padding-box;
-    border: 1px solid #d5884d;
-    color: white;
-    padding: 10px 25px;
-    display: inline-block;
-    margin-top: 20px;
+  #news .articles article .button {
     color: #363636;
     margin-left: 15px;
   }
@@ -614,7 +571,6 @@ body {
   footer {
     height: 108px;
     width: 100vw;
-    font-family: "Source Sans Pro";
     color: #ffffff;
     font-weight: 300;
     background-color: #363636;

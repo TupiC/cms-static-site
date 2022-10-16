@@ -1,4 +1,21 @@
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Source Sans Pro";
+}
+
+.super-headline {
+  @include superHeadline;
+}
+
+.button {
+  @include button;
+}
+
+p {
+  line-height: 26px;
+}

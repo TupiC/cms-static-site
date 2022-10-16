@@ -1,6 +1,5 @@
 @include breakpoint(0, $mobile) {
     #about {
-        font-family: 'Source Sans Pro';
         margin-top: $sectionMargin;
         padding-top: $sectionMargin;
         height: auto;
@@ -18,7 +17,6 @@
         }
 
         .super-headline {
-            @include superHeadline;
             margin-top: $leftMargin;
         }
 
@@ -32,13 +30,14 @@
             font-weight: 300;
             font-size: 16px;
             color: $darkgrey;
-            line-height: 22px;
+            text-align: justify;
             margin-bottom: 10px;
+            margin-right: 10px;
         }
 
         a {
-            @include button;
-            color: $darkgrey
+            color: $darkgrey;
+            margin-bottom: $sectionMargin/2;
         }
     }
 }

@@ -1,12 +1,7 @@
 @include breakpoint(0, $mobile) {
     #news {
-        font-family: 'Source Sans Pro';
         margin-top: $sectionMargin/2;
         margin-left: $leftMargin;
-
-        .super-headline {
-            @include superHeadline;
-        }
 
         h2 {
             @include h2;
@@ -20,8 +15,8 @@
 
             article {
                 background-color: $whitelight;
-                margin-left: $leftMargin;
-                padding-bottom: $leftMargin;
+                margin-right: $leftMargin;
+                padding-bottom: $leftMargin*3;
 
                 h3 {
                     @include h2;
@@ -42,8 +37,7 @@
                     margin: $leftMargin;
                 }
 
-                a {
-                    @include button;
+                .button {
                     color: $darkgrey;
                     margin-left: $leftMargin;
                 }

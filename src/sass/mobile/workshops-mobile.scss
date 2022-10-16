@@ -1,14 +1,9 @@
 @include breakpoint(0, $mobile) {
     #workshops {
-        font-family: 'Source Sans Pro';
 
         h2,
         .super-headline {
-            margin-left: $leftMargin;
-        }
-
-        .super-headline {
-            @include superHeadline
+            margin: 0 $leftMargin 0 $leftMargin;
         }
 
         h2 {
@@ -18,7 +13,7 @@
         .level {
             display: grid;
             grid-template-columns: auto 115px auto 37px;
-            grid-template-rows: 70px 134px 160px;
+            grid-template-rows: 70px 134px auto;
             background-color: $darkgrey;
             margin-top: 100px;
             padding-left: $leftMargin;
@@ -106,10 +101,6 @@
                     margin-top: $leftMargin;
                     margin-right: $leftMargin;
                 }
-
-                .button {
-                    @include button;
-                }
             }
 
 
@@ -120,6 +111,8 @@
                 grid-row: 3/3;
                 align-items: center;
                 justify-content: center;
+                margin-top: 80px;
+                margin-bottom: $leftMargin*2;
 
                 blockquote {
                     text-align: center;

@@ -5,7 +5,6 @@
         height: 558px;
         object-fit: cover;
         background-position: left -50px top 0;
-        font-family: 'Source Sans Pro';
         margin-bottom: $sectionMargin;
 
         h1 {
@@ -23,14 +22,12 @@
         }
 
         .headercontainer {
-            display: inline-block;
-            flex-direction: column;
-            justify-content: flex-end;
-            width: 100vw;
+            display: block;
+            width: 50%;
             height: auto;
-            position: relative;
+            position: absolute;
             top: 45%;
-            margin-left: 50vw;
+            right: 20px;
 
             h2 {
                 color: $darkorange;
@@ -40,10 +37,6 @@
                 letter-spacing: 0px;
                 opacity: 1;
                 top: 314px;
-            }
-
-            .button {
-                @include button;
             }
         }
     }
