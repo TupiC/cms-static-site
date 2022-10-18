@@ -664,6 +664,125 @@ p {
   }
 }
 @media (min-width: 37.5625rem) and (max-width: 120rem) {
+  #workshops {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  #workshops h2,
+#workshops .super-headline {
+    margin: 0 15px 0 15px;
+    font-size: 22px;
+  }
+  #workshops h2 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #d5884d;
+    font-size: 68px;
+  }
+  #workshops .level {
+    display: grid;
+    grid-template-columns: auto 115px auto 37px;
+    grid-template-rows: 70px 134px auto;
+    background-color: #363636;
+    margin-top: 100px;
+    padding-left: 15px;
+  }
+  #workshops .level p {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 22px;
+  }
+  #workshops .level .imgCircle {
+    height: 115px;
+    aspect-ratio: 1;
+    background-color: #595959;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/2;
+    transform: translateY(-50%);
+  }
+  #workshops .level .imgCircle p {
+    margin-top: 0;
+    color: #d5884d;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  #workshops .level .imgCircle div {
+    height: 30px;
+    aspect-ratio: 1;
+    background-color: #d6d6d6;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+    transform: translate(150%, -150%);
+  }
+  #workshops .level .apply {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    vertical-align: middle;
+    grid-column: 4/4;
+    grid-row: 1/4;
+    font-size: 18px;
+    font-weight: 200;
+    color: #1A1A1A;
+    background-color: #f7f7f7;
+    padding-top: 15px;
+  }
+  #workshops .level .yoga,
+#workshops .level .quote {
+    width: 67px;
+    aspect-ratio: 1;
+  }
+  #workshops .level .yoga {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(293deg) brightness(107%) contrast(101%);
+  }
+  #workshops .level .levelText {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    overflow: auto;
+  }
+  #workshops .level .levelText h3 {
+    color: #FFAD6E;
+    font-size: 22px;
+    font-weight: 300;
+  }
+  #workshops .level .levelText h3,
+#workshops .level .levelText p,
+#workshops .level .levelText .button {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 22px;
+  }
+  #workshops .level .levelText p {
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  #workshops .level .quoteFlex {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/2;
+    grid-row: 3/3;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  #workshops .level .quoteFlex blockquote {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    color: #ffffff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+@media (min-width: 37.5625rem) and (max-width: 120rem) {
   #about {
     margin-top: 60px;
     padding-bottom: 100px;
