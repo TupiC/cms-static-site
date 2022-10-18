@@ -1,10 +1,10 @@
 @include breakpoint($desktop, $max-width) {
     #about {
         margin-top: $sectionMargin;
-        padding-top: $sectionMargin;
+        padding-bottom:100px;
         height: auto;
         width: 100vw;
-        padding: 0 $leftMargin $leftMargin+10px $leftMargin;
+        padding-top:100px;
         background-color: $darkwhite;
 
         div {
@@ -15,6 +15,8 @@
                 width: 50vw;
                 object-fit: cover;
                 object-position: 0 0;
+                padding-left: 40px;
+                padding-right: 20px;
             }
 
         .goingflex{
