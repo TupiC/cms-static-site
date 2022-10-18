@@ -1,0 +1,53 @@
+@include breakpoint ($desktop, $max-width) {
+    #news {
+        margin-top: $sectionMargin/2;
+        margin-left: $leftMargin;
+
+        .super-headline{
+            font-size: 22px;
+        }
+
+        h2 {
+            font-size: 68px;
+            color: $darkorange;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .articles {
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+
+            article {
+                background-color: $whitelight;
+                margin-right: $leftMargin;
+                padding-bottom: $leftMargin*3;
+
+                h3 {
+                    @include h2;
+                    font-size: 36px;
+                    padding: $leftMargin;
+                }
+
+                img {
+                    height: 250px;
+                    width: 425px;
+                    object-fit: cover;
+                }
+
+                p {
+                    color: $darkgrey;
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin: $leftMargin;
+                }
+
+                .button {
+                    color: $darkgrey;
+                    margin-left: $leftMargin;
+                }
+            }
+        }
+    }
+}
