@@ -5,6 +5,7 @@
         background-image: url('./images/headerCropImg.jpg');
         background-repeat: no-repeat;
         background-position: right;
+        position: relative;
         height: 896px;
         display: flex;
         flex-direction: row;
@@ -34,8 +35,6 @@
                 display: flex;
                 flex-flow: row;
                 justify-content: space-around;
-
-
             }
 
             button {
