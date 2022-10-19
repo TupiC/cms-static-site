@@ -226,7 +226,17 @@ body {
 }
 
 @media (min-width: 0rem) and (max-width: 37.5rem) {
-  .number {
+  .numberThree,
+.numberTwo,
+.numberOne {
+    display: none;
+  }
+  .workshopGrid {
+    display: none;
+  }
+  .apply3,
+.apply2,
+.apply1 {
     display: none;
   }
 }
@@ -251,6 +261,13 @@ body {
   padding: 10px 25px;
   display: inline-block;
   margin-top: 20px;
+  transition: 200ms;
+}
+
+.button:hover {
+  background-color: #d5884d;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 p {
@@ -679,6 +696,327 @@ p {
     margin-top: 100px;
     margin-bottom: 100px;
   }
+  #workshops .workshopGrid {
+    display: grid;
+    grid-template-columns: 120px 1fr auto;
+    grid-template-rows: 3fr;
+    gap: 35px;
+    margin-right: 35px;
+  }
+  #workshops .workshopGrid .numberThree {
+    font-size: 300px;
+    font-weight: 600;
+    color: #363636;
+    grid-column: 1/2;
+    grid-row: 1/1;
+    line-height: unset;
+    background-color: #ffffff;
+    position: relative;
+    transform: translateX(23px) translateY(5px);
+  }
+  #workshops .workshopGrid .level.three {
+    grid-column: 2/3;
+    grid-row: 1/1;
+    display: grid;
+    grid-template-columns: 500px auto 300px;
+    grid-template-rows: repeat(1fr, 3);
+    background-color: #363636;
+    margin-top: 68px;
+    position: relative;
+    height: 332px;
+    align-items: center;
+    padding-left: 35px;
+  }
+  #workshops .workshopGrid .level.three .imgCircle {
+    height: 200px;
+    aspect-ratio: 1;
+    background-color: #595959;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin: 46px 0px;
+  }
+  #workshops .workshopGrid .level.three .imgCircle img {
+    width: 100px;
+    aspect-ratio: 1;
+  }
+  #workshops .workshopGrid .level.three .imgCircle div {
+    display: none;
+  }
+  #workshops .workshopGrid .level.three .apply {
+    display: none;
+  }
+  #workshops .workshopGrid .level.three .yoga,
+#workshops .workshopGrid .level.three .quote {
+    width: 120px;
+    aspect-ratio: 1;
+  }
+  #workshops .workshopGrid .level.three .yoga {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(293deg) brightness(107%) contrast(101%);
+  }
+  #workshops .workshopGrid .level.three .levelText {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    margin-top: 46px;
+  }
+  #workshops .workshopGrid .level.three .levelText h3,
+#workshops .workshopGrid .level.three .levelText p,
+#workshops .workshopGrid .level.three .levelText .button {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 22px;
+  }
+  #workshops .workshopGrid .level.three .levelText h3 {
+    color: #FFAD6E;
+    font-size: 38px;
+    font-weight: 300;
+  }
+  #workshops .workshopGrid .level.three .levelText p {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  #workshops .workshopGrid .level.three .quoteFlex {
+    display: flex;
+    flex-direction: column-reverse;
+    grid-column: 3/3;
+    grid-row: 1/3;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+  #workshops .workshopGrid .level.three .quoteFlex blockquote {
+    font-size: 38px;
+    font-weight: 300;
+    color: #ffffff;
+    position: absolute;
+    top: 46px;
+  }
+  #workshops .workshopGrid .apply3 {
+    grid-column: 3/3;
+    grid-row: 1/1;
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 200;
+    color: #1A1A1A;
+    background-color: #f7f7f7;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 332px;
+    position: relative;
+    top: 68px;
+  }
+  #workshops .workshopGrid .numberTwo {
+    font-size: 300px;
+    font-weight: 600;
+    color: #363636;
+    grid-column: 1/2;
+    grid-row: 2/2;
+    line-height: unset;
+    background-color: #ffffff;
+    position: relative;
+    transform: translateX(23px);
+    display: flex;
+    align-items: center;
+  }
+  #workshops .workshopGrid .level.two {
+    grid-column: 2/3;
+    grid-row: 2/2;
+    display: grid;
+    grid-template-columns: 300px auto 500px;
+    grid-template-rows: repeat(1fr, 3);
+    background-color: #363636;
+    position: relative;
+    height: 332px;
+    align-items: center;
+    padding-left: 35px;
+  }
+  #workshops .workshopGrid .level.two .imgCircle {
+    height: 200px;
+    aspect-ratio: 1;
+    background-color: #595959;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin: 46px 0px;
+  }
+  #workshops .workshopGrid .level.two .imgCircle img {
+    width: 100px;
+    aspect-ratio: 1;
+  }
+  #workshops .workshopGrid .level.two .imgCircle div {
+    display: none;
+  }
+  #workshops .workshopGrid .level.two .apply {
+    display: none;
+  }
+  #workshops .workshopGrid .level.two .yoga,
+#workshops .workshopGrid .level.two .quote {
+    width: 120px;
+    aspect-ratio: 1;
+  }
+  #workshops .workshopGrid .level.two .yoga {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(293deg) brightness(107%) contrast(101%);
+  }
+  #workshops .workshopGrid .level.two .levelText {
+    grid-column: 3/3;
+    grid-row: 1/4;
+    margin-top: 46px;
+    padding-left: 35px;
+  }
+  #workshops .workshopGrid .level.two .levelText h3,
+#workshops .workshopGrid .level.two .levelText p,
+#workshops .workshopGrid .level.two .levelText .button {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 22px;
+  }
+  #workshops .workshopGrid .level.two .levelText h3 {
+    color: #FFAD6E;
+    font-size: 38px;
+    font-weight: 300;
+  }
+  #workshops .workshopGrid .level.two .levelText p {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  #workshops .workshopGrid .level.two .quoteFlex {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/1;
+    grid-row: 1/3;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+  #workshops .workshopGrid .level.two .quoteFlex blockquote {
+    font-size: 38px;
+    font-weight: 300;
+    padding-right: 60px;
+    color: #ffffff;
+    top: 46px;
+  }
+  #workshops .workshopGrid .apply2 {
+    grid-column: 3/3;
+    grid-row: 2/span 2;
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 200;
+    color: #1A1A1A;
+    background-color: #f7f7f7;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+  }
+  #workshops .workshopGrid .numberOne {
+    font-size: 300px;
+    font-weight: 600;
+    color: #363636;
+    grid-column: 1/1;
+    grid-row: 3/3;
+    line-height: unset;
+    background-color: #ffffff;
+    position: relative;
+    transform: translateX(23px) translateY(43px);
+    display: flex;
+    align-items: flex-end;
+  }
+  #workshops .workshopGrid .level.one {
+    grid-column: 2/3;
+    grid-row: 3/3;
+    display: grid;
+    grid-template-columns: auto 500px 300px;
+    grid-template-rows: repeat(1fr, 3);
+    background-color: #363636;
+    position: relative;
+    height: 332px;
+    padding-left: 35px;
+    align-items: center;
+  }
+  #workshops .workshopGrid .level.one .imgCircle {
+    height: 200px;
+    aspect-ratio: 1;
+    background-color: #595959;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin: 46px 0px;
+  }
+  #workshops .workshopGrid .level.one .imgCircle img {
+    width: 100px;
+    aspect-ratio: 1;
+  }
+  #workshops .workshopGrid .level.one .imgCircle div {
+    display: none;
+  }
+  #workshops .workshopGrid .level.one .apply {
+    display: none;
+  }
+  #workshops .workshopGrid .level.one .yoga,
+#workshops .workshopGrid .level.one .quote {
+    width: 120px;
+    aspect-ratio: 1;
+  }
+  #workshops .workshopGrid .level.one .yoga {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(293deg) brightness(107%) contrast(101%);
+  }
+  #workshops .workshopGrid .level.one .levelText {
+    grid-column: 2/2;
+    grid-row: 1/4;
+    margin-top: 46px;
+    padding-left: 35px;
+  }
+  #workshops .workshopGrid .level.one .levelText h3,
+#workshops .workshopGrid .level.one .levelText p,
+#workshops .workshopGrid .level.one .levelText .button {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 22px;
+  }
+  #workshops .workshopGrid .level.one .levelText h3 {
+    color: #FFAD6E;
+    font-size: 38px;
+    font-weight: 300;
+  }
+  #workshops .workshopGrid .level.one .levelText p {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  #workshops .workshopGrid .level.one .quoteFlex {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3/3;
+    grid-row: 1/3;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  #workshops .workshopGrid .level.one .quoteFlex blockquote {
+    font-size: 38px;
+    font-weight: 300;
+    color: #ffffff;
+    top: 46px;
+  }
   #workshops h2,
 #workshops .super-headline {
     margin: 0 15px 0 15px;
@@ -689,106 +1027,6 @@ p {
     font-weight: 300;
     color: #d5884d;
     font-size: 68px;
-  }
-  #workshops .level {
-    display: grid;
-    grid-template-columns: 1fr 605px auto 1fr 1fr;
-    grid-template-rows: repeat(1fr, 3);
-    gap: 34px;
-    background-color: #363636;
-    margin-top: 100px;
-    position: relative;
-  }
-  #workshops .level .number {
-    font-size: 300px;
-    font-weight: 600;
-    color: #363636;
-    grid-column: 1/1;
-    grid-row: 1/4;
-    background-color: #ffffff;
-    height: 100%;
-    position: absolute;
-  }
-  #workshops .level.three .number {
-    top: 0;
-  }
-  #workshops .level .imgCircle {
-    height: 240px;
-    aspect-ratio: 1;
-    background-color: #595959;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: 3/4;
-    grid-row: 1/4;
-    margin: 46px 0px;
-  }
-  #workshops .level .imgCircle img {
-    width: 140px;
-    aspect-ratio: 1;
-  }
-  #workshops .level .imgCircle div {
-    display: none;
-  }
-  #workshops .apply {
-    grid-column: 5/5;
-    grid-row: 1/4;
-    font-size: 42px;
-    line-height: 42px;
-    font-weight: 200;
-    color: #1A1A1A;
-    background-color: #f7f7f7;
-    display: flex;
-    text-align: center;
-    align-items: center;
-  }
-  #workshops .yoga,
-#workshops .quote {
-    width: 120px;
-    aspect-ratio: 1;
-  }
-  #workshops .yoga {
-    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(293deg) brightness(107%) contrast(101%);
-  }
-  #workshops .levelText {
-    grid-column: 2/3;
-    grid-row: 1/4;
-    margin-top: 46px;
-  }
-  #workshops .levelText h3,
-#workshops .levelText p,
-#workshops .levelText .button {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    font-size: 22px;
-  }
-  #workshops .levelText h3 {
-    color: #FFAD6E;
-    font-size: 38px;
-    font-weight: 300;
-  }
-  #workshops .levelText p {
-    color: #ffffff;
-    font-weight: 300;
-    font-size: 22px;
-    margin-top: 15px;
-    margin-right: 15px;
-  }
-  #workshops .quoteFlex {
-    display: flex;
-    flex-direction: column-reverse;
-    grid-column: 4/5;
-    grid-row: 1/4;
-    align-items: flex-end;
-    justify-content: flex-start;
-  }
-  #workshops .quoteFlex blockquote {
-    font-size: 38px;
-    font-weight: 300;
-    color: #ffffff;
-    position: absolute;
-    top: 46px;
   }
 }
 @media (min-width: 37.5625rem) and (max-width: 120rem) {
@@ -836,6 +1074,7 @@ p {
     color: #363636;
     text-align: left;
     margin-bottom: 10px;
+    line-height: 35px;
     margin-right: 10px;
   }
   #about div .goingflex .button_padding a {

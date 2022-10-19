@@ -15,7 +15,20 @@ body {
 }
 
 @include breakpoint(0, $mobile) {
-  .number {
+
+  .numberThree,
+  .numberTwo,
+  .numberOne {
+    display: none;
+  }
+
+  .workshopGrid {
+    display: none;
+  }
+
+  .apply3,
+  .apply2,
+  .apply1 {
     display: none;
   }
 }
@@ -26,6 +39,10 @@ body {
 
 .button {
   @include button;
+}
+
+.button:hover {
+  @include buttonHover;
 }
 
 p {

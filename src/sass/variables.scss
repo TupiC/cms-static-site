@@ -44,6 +44,13 @@ $lighterdark: #1A1A1A;
     padding: 10px 25px;
     display: inline-block;
     margin-top: 20px;
+    transition: 200ms;
+}
+
+@mixin buttonHover {
+    background-color: $darkorange;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 @mixin superHeadline {

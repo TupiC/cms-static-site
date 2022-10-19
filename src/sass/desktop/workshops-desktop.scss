@@ -3,6 +3,382 @@
         margin-top: 100px;
         margin-bottom: 100px;
 
+        .workshopGrid {
+            display: grid;
+            grid-template-columns: 120px 1fr auto;
+            grid-template-rows: 3fr;
+            gap: 35px;
+            margin-right: 35px;
+
+            .numberThree {
+                font-size: 300px;
+                font-weight: 600;
+                color: #363636;
+                grid-column: 1/2;
+                grid-row: 1/1;
+                line-height: unset;
+                background-color: #ffffff;
+                position: relative;
+                transform: translateX(23px) translateY(5px);
+            }
+
+            .level.three {
+                grid-column: 2/3;
+                grid-row: 1/1;
+                display: grid;
+                grid-template-columns: 500px auto 300px;
+                grid-template-rows: repeat(1fr, 3);
+                background-color: $darkgrey;
+                margin-top: 68px;
+                position: relative;
+                height: 332px;
+                align-items: center;
+                padding-left: 35px;
+
+                .imgCircle {
+                    height: 200px;
+                    aspect-ratio: 1;
+                    background-color: $grey;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 2/3;
+                    grid-row: 1/3;
+                    margin: 46px 0px;
+
+                    img {
+                        width: 100px;
+                        aspect-ratio: 1;
+                    }
+
+                    div {
+                        display: none;
+                    }
+                }
+
+                .apply {
+                    display: none;
+                }
+
+                .yoga,
+                .quote {
+                    width: 120px;
+                    aspect-ratio: 1;
+                }
+
+
+                .yoga {
+                    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(293deg) brightness(107%) contrast(101%);
+                }
+
+                .levelText {
+                    grid-column: 1/2;
+                    grid-row: 1/4;
+                    margin-top: 46px;
+
+                    h3,
+                    p,
+                    .button {
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        font-size: 22px;
+                    }
+
+                    h3 {
+                        color: $lightorange;
+                        font-size: 38px;
+                        font-weight: 300;
+                    }
+
+                    p {
+                        color: $white;
+                        font-weight: 300;
+                        font-size: 22px;
+                        margin-top: $leftMargin;
+                        margin-right: $leftMargin;
+                    }
+                }
+
+
+                .quoteFlex {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    grid-column: 3/3;
+                    grid-row: 1/3;
+                    align-items: flex-end;
+                    justify-content: flex-start;
+                    padding-left: 20px;
+
+
+                    blockquote {
+                        font-size: 38px;
+                        font-weight: 300;
+                        color: $white;
+                        position: absolute;
+                        top: 46px;
+                    }
+                }
+            }
+
+            .apply3 {
+                grid-column: 3/3;
+                grid-row: 1/1;
+                font-size: 42px;
+                line-height: 42px;
+                font-weight: 200;
+                color: $lighterdark;
+                background-color: $whitelight;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                height: 332px;
+                position: relative;
+                top: 68px;
+            }
+
+            .numberTwo {
+                font-size: 300px;
+                font-weight: 600;
+                color: #363636;
+                grid-column: 1/2;
+                grid-row: 2/2;
+                line-height: unset;
+                background-color: #ffffff;
+                position: relative;
+                transform: translateX(23px);
+                display: flex;
+                align-items: center;
+            }
+
+            .level.two {
+                grid-column: 2/3;
+                grid-row: 2/2;
+                display: grid;
+                grid-template-columns: 300px auto 500px;
+                grid-template-rows: repeat(1fr, 3);
+                background-color: $darkgrey;
+                position: relative;
+                height: 332px;
+                align-items: center;
+                padding-left: 35px;
+
+                .imgCircle {
+                    height: 200px;
+                    aspect-ratio: 1;
+                    background-color: $grey;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 2/3;
+                    grid-row: 1/3;
+                    margin: 46px 0px;
+
+                    img {
+                        width: 100px;
+                        aspect-ratio: 1;
+                    }
+
+                    div {
+                        display: none;
+                    }
+                }
+
+                .apply {
+                    display: none;
+                }
+
+                .yoga,
+                .quote {
+                    width: 120px;
+                    aspect-ratio: 1;
+                }
+
+
+                .yoga {
+                    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(293deg) brightness(107%) contrast(101%);
+                }
+
+                .levelText {
+                    grid-column: 3/3;
+                    grid-row: 1/4;
+                    margin-top: 46px;
+                    padding-left: 35px;
+
+                    h3,
+                    p,
+                    .button {
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        font-size: 22px;
+                    }
+
+                    h3 {
+                        color: $lightorange;
+                        font-size: 38px;
+                        font-weight: 300;
+                    }
+
+                    p {
+                        color: $white;
+                        font-weight: 300;
+                        font-size: 22px;
+                        margin-top: $leftMargin;
+                        margin-right: $leftMargin;
+                    }
+                }
+
+
+                .quoteFlex {
+                    display: flex;
+                    flex-direction: column;
+                    grid-column: 1/1;
+                    grid-row: 1/3;
+                    align-items: flex-end;
+                    justify-content: flex-start;
+                    padding-left: 20px;
+
+
+                    blockquote {
+                        font-size: 38px;
+                        font-weight: 300;
+                        padding-right: 60px;
+                        color: $white;
+                        top: 46px;
+                    }
+                }
+            }
+
+            .apply2 {
+                grid-column: 3/3;
+                grid-row: 2/span 2;
+                font-size: 42px;
+                line-height: 42px;
+                font-weight: 200;
+                color: $lighterdark;
+                background-color: $whitelight;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                position: relative;
+            }
+
+            .numberOne {
+                font-size: 300px;
+                font-weight: 600;
+                color: #363636;
+                grid-column: 1/1;
+                grid-row: 3/3;
+                line-height: unset;
+                background-color: #ffffff;
+                position: relative;
+                transform: translateX(23px) translateY(43px);
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .level.one {
+                grid-column: 2/3;
+                grid-row: 3/3;
+                display: grid;
+                grid-template-columns: auto 500px 300px;
+                grid-template-rows: repeat(1fr, 3);
+                background-color: $darkgrey;
+                position: relative;
+                height: 332px;
+                padding-left: 35px;
+                align-items: center;
+
+                .imgCircle {
+                    height: 200px;
+                    aspect-ratio: 1;
+                    background-color: $grey;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 1/2;
+                    grid-row: 1/3;
+                    margin: 46px 0px;
+
+                    img {
+                        width: 100px;
+                        aspect-ratio: 1;
+                    }
+
+                    div {
+                        display: none;
+                    }
+                }
+
+                .apply {
+                    display: none;
+                }
+
+                .yoga,
+                .quote {
+                    width: 120px;
+                    aspect-ratio: 1;
+                }
+
+
+                .yoga {
+                    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(293deg) brightness(107%) contrast(101%);
+                }
+
+                .levelText {
+                    grid-column: 2/2;
+                    grid-row: 1/4;
+                    margin-top: 46px;
+                    padding-left: 35px;
+
+                    h3,
+                    p,
+                    .button {
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        font-size: 22px;
+                    }
+
+                    h3 {
+                        color: $lightorange;
+                        font-size: 38px;
+                        font-weight: 300;
+                    }
+
+                    p {
+                        color: $white;
+                        font-weight: 300;
+                        font-size: 22px;
+                        margin-top: $leftMargin;
+                        margin-right: $leftMargin;
+                    }
+                }
+
+
+                .quoteFlex {
+                    display: flex;
+                    flex-direction: column;
+                    grid-column: 3/3;
+                    grid-row: 1/3;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    padding-left: 20px;
+                    padding-bottom: 20px;
+
+
+                    blockquote {
+                        font-size: 38px;
+                        font-weight: 300;
+                        color: $white;
+                        top: 46px;
+                    }
+                }
+            }
+
+        }
+
         h2,
         .super-headline {
             margin: 0 $leftMargin 0 $leftMargin;
@@ -14,127 +390,8 @@
             font-size: 68px;
         }
 
-        .level {
-            display: grid;
-            grid-template-columns: 1fr 605px auto 1fr 1fr;
-            grid-template-rows: repeat(1fr, 3);
-            gap: 34px;
-            background-color: $darkgrey;
-            margin-top: 100px;
-            position: relative;
-
-
-            .number {
-                font-size: 300px;
-                font-weight: 600;
-                color: $darkgrey;
-                grid-column: 1/1;
-                grid-row: 1/4;
-                background-color: $white;
-                height: 100%;
-                position: absolute;
-            }
-
-            &.three {
-                .number {
-                    top: 0;
-                }
-            }
 
 
 
-            .imgCircle {
-                height: 240px;
-                aspect-ratio: 1;
-                background-color: $grey;
-                border-radius: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                grid-column: 3/4;
-                grid-row: 1/4;
-                margin: 46px 0px;
-
-                img {
-                    width: 140px;
-                    aspect-ratio: 1;
-                }
-
-                div {
-                    display: none;
-                }
-            }
-        }
-
-        .apply {
-            grid-column: 5/5;
-            grid-row: 1/4;
-            font-size: 42px;
-            line-height: 42px;
-            font-weight: 200;
-            color: $lighterdark;
-            background-color: $whitelight;
-            display: flex;
-            text-align: center;
-            align-items: center;
-        }
-
-        .yoga,
-        .quote {
-            width: 120px;
-            aspect-ratio: 1;
-        }
-
-
-        .yoga {
-            filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(293deg) brightness(107%) contrast(101%);
-        }
-
-        .levelText {
-            grid-column: 2/3;
-            grid-row: 1/4;
-            margin-top: 46px;
-
-            h3,
-            p,
-            .button {
-                text-overflow: ellipsis;
-                overflow: hidden;
-                font-size: 22px;
-            }
-
-            h3 {
-                color: $lightorange;
-                font-size: 38px;
-                font-weight: 300;
-            }
-
-            p {
-                color: $white;
-                font-weight: 300;
-                font-size: 22px;
-                margin-top: $leftMargin;
-                margin-right: $leftMargin;
-            }
-        }
-
-
-        .quoteFlex {
-            display: flex;
-            flex-direction: column-reverse;
-            grid-column: 4/5;
-            grid-row: 1/4;
-            align-items: flex-end;
-            justify-content: flex-start;
-
-
-            blockquote {
-                font-size: 38px;
-                font-weight: 300;
-                color: $white;
-                position: absolute;
-                top: 46px;
-            }
-        }
     }
 }

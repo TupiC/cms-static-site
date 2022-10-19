@@ -1,15 +1,16 @@
 @include breakpoint($desktop, $max-width) {
     #about {
         margin-top: $sectionMargin;
-        padding-bottom:100px;
+        padding-bottom: 100px;
         height: auto;
         width: 100vw;
-        padding-top:100px;
+        padding-top: 100px;
         background-color: $darkwhite;
 
         div {
             flex-direction: row;
             display: flex;
+
             img {
                 height: 739px;
                 width: 50vw;
@@ -19,49 +20,48 @@
                 padding-right: 20px;
             }
 
-        .goingflex{
-            display: flex;
-            flex-direction: column;
-            margin-right: 10vw;
-            padding: 0px 20px;
-        
-            .super-headline {
-                margin-top: $leftMargin;
-                font-weight: 600;
-                font-size: 22px;
-                margin-top: 20px;
-            }
-        
+            .goingflex {
+                display: flex;
+                flex-direction: column;
+                margin-right: 10vw;
+                padding: 0px 20px;
 
-            h2 {
-             color: $darkorange;
-             font-size: 68px;
-             font-weight: 300;
-             margin-bottom: 20px;
+                .super-headline {
+                    margin-top: $leftMargin;
+                    font-weight: 600;
+                    font-size: 22px;
+                    margin-top: 20px;
+                }
+
+
+                h2 {
+                    color: $darkorange;
+                    font-size: 68px;
+                    font-weight: 300;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-weight: 300;
+                    font-size: 22px;
+                    color: $darkgrey;
+                    text-align: left;
+                    margin-bottom: 10px;
+                    line-height: 35px;
+                    margin-right: 10px;
+                }
+
+                .button_padding {
+
+                    a {
+                        color: $darkgrey;
+                        margin-bottom: $sectionMargin/2;
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+                }
             }
 
-            p {
-                font-weight: 300;
-                font-size: 22px;
-                color: $darkgrey;
-                text-align: left;
-                margin-bottom: 10px;
-                margin-right: 10px;
-            }
-            .button_padding{
-
-            a {
-                color: $darkgrey;
-                margin-bottom: $sectionMargin/2;
-                font-size: 22px;
-                font-weight: 600;
-            }
-            }
-        }
-           
         }
     }
 }
-
-
-
