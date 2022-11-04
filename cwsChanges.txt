@@ -1,0 +1,24 @@
+DONE:
+mobile:
+	fixed: text
+	position: relative
+hamburger: font-weight
+workshops: display
+button padding oben unten
+aaron padding left entfernen
+block paddings gleich groß
+----------------
+TODO:
+z-index level
+article:level heading overflow weg
+
+desktop:
+nav uppercase + linie höher
+article grid responsive machen
+
+aaron bild immer gleich hoch wie parent
+
+news font-weight
+
+sass breakpoint desktop max entfernen
+sass nestings verkleinern
